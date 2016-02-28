@@ -111,4 +111,5 @@ install() {
   inst "$moddir"/helper/console_peek.sh /bin/console_peek
   inst "$moddir"/helper/unlock /bin/unlock
   inst "$moddir"/helper/unlock-reap-success.sh /sbin/unlock-reap-success
+  [[ -f /etc/crypttab ]] && inst /etc/crypttab
 }
